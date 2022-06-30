@@ -1,0 +1,8 @@
+:root {
+    --text-main-color: rgba(13, 60, 0, 1);
+    --text-title-color: rgba(121, 162, 7, 1);
+    --dark-description-color: rgba(25, 28, 24, 1);
+    --light-description-color: rgba(112, 112, 112, 1);
+    --background-lightest-color: white;
+    --background-light-color: rgba(250, 245, 242, 1);
+}

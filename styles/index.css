@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap);
 @import url(common.css);
+@import url(variables.css);
 @import url(header.css);
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url(make-your-home-green.css)

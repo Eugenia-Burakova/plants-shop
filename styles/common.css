@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Source+Sans+Pro', sans-serif;
+    scroll-behavior: smooth;
+    color: var(--main-color);
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.container {
+    max-width: ;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+

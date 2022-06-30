@@ -1,0 +1,10 @@
+.header {
+    background-color: var(--background-lightest-color);
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header__logo-image {
+    max-width: 162px;
+}
