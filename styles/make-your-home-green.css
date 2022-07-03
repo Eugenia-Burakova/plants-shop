@@ -1,3 +1,33 @@
 .make-your-home-green {
     background-image: url(../img/make-your-home-green-background.png);
+    background-size: cover;
+    padding: 100px 30px 100px 30px;
+}
+
+.make-your-home-green__content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.make-your-home-green__title {
+    color: var(--text-title-color);
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+
+.make-your-home-green__slogan {
+    color: var(--text-main-color);
+    font-family: 'Gulzar', sans-serif;
+    font-size: 50px;
+    line-height: 2ch;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.make-your-home-green__text {
+    color: var(--dark-description-color);
+    font-size: 17px;
+    line-height: 3ch;
+    margin-bottom: 40px;
 }

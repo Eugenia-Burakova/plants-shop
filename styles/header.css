@@ -5,6 +5,12 @@
     vertical-align: middle;
 }
 
+.header__content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header__logo-image {
     max-width: 162px;
 }
