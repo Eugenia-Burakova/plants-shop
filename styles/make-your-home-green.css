@@ -31,3 +31,22 @@
     line-height: 3ch;
     margin-bottom: 40px;
 }
+
+.make-your-home-green__button-plants {
+    background-color: var(--text-title-color);
+    color: white;
+    font-family: 'Source+Sans+Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    padding: 20px 40px 20px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.make-your-home-green__button-plants:hover {
+    background-color: var(--text-main-color);
+    transition: 1s;
+}
+
