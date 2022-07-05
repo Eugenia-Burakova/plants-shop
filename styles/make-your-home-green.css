@@ -6,8 +6,6 @@
 
 .make-your-home-green__content {
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .make-your-home-green__title {
@@ -36,13 +34,16 @@
     background-color: var(--text-title-color);
     color: white;
     font-family: 'Source+Sans+Pro', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
     border: none;
-    padding: 20px 40px 20px 40px;
+    padding: 20px;
     border-radius: 40px;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .make-your-home-green__button-plants:hover {
@@ -50,3 +51,60 @@
     transition: 1s;
 }
 
+.make-your-home-green__button-info {
+    background-color: transparent;
+    color: var(--text-main-color);
+    font-family: 'Source+Sans+Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border-color: var(--text-main-color);
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.make-your-home-green__button-info:hover {
+    background-color: var(--text-main-color);
+    color: white;
+    transition: 1s;
+}
+
+.make-your-home-green__buttons {
+    display: grid;
+    grid-template-columns: 140px;
+    gap: 20px;
+}
+
+@media (min-width: 375px) {
+    .make-your-home-green__buttons {
+        grid-template-columns: 140px 140px;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .make-your-home-green__content {
+        max-width: 50%;
+        margin-left: 0px;
+    }
+    .make-your-home-green__slogan {
+        font-size: 74px;
+    }
+}
+
+@media (min-width: 990px) {
+    .make-your-home-green__slogan {
+        font-size: 84px;
+    }
+}
+
+@media (min-width: 1200px){
+    .make-your-home-green {
+       
+    }
+
+}
