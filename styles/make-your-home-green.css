@@ -1,4 +1,4 @@
-.make-your-home-green {
+.container {
     background-image: url(../img/make-your-home-green-background.png);
     background-size: cover;
     padding: 100px 30px 100px 30px;
@@ -48,7 +48,6 @@
 
 .make-your-home-green__button-plants:hover {
     background-color: var(--text-main-color);
-    transition: 1s;
 }
 
 .make-your-home-green__button-info {
@@ -70,7 +69,6 @@
 .make-your-home-green__button-info:hover {
     background-color: var(--text-main-color);
     color: white;
-    transition: 1s;
 }
 
 .make-your-home-green__buttons {
@@ -103,8 +101,11 @@
 }
 
 @media (min-width: 1200px){
-    .make-your-home-green {
-       
+    .make-your-home-green__content {
+        width: 1200px;
+        
     }
-
+    .make-your-home-green {
+        
+    }
 }
