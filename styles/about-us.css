@@ -54,7 +54,11 @@
     padding: 20px;
     border-radius: 40px;
     text-decoration: none;
-    
+}
+
+.about-us__button:hover {
+    background-color: var(--text-main-color);
+    transition: 5s;
 }
 
 .about-us__image {
