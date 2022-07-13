@@ -29,7 +29,7 @@
 }
 
 .about-us__unordered-list {
-    color: var(--dark-description-color);
+    color: var(--light-description-color);
     font-size: 15px;
     text-transform: uppercase;
     line-height: 3ch;
@@ -58,7 +58,7 @@
 
 .about-us__button:hover {
     background-color: var(--text-main-color);
-    transition: 5s;
+    transition: 1s;
 }
 
 .about-us__image {
