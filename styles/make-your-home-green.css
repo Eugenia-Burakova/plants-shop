@@ -106,11 +106,19 @@
         font-size: 95px;
         width: 600px;
     }
-    .make-your-home-green__content {
-        margin-top: 200px;
-        margin-bottom: 200px;
+    .make-your-home-green__text {
+        width: 600px;
     }
 }
 
 @media (min-width: 1200px){
-  
+    .container {
+        display: flex;
+        justify-content: center;
+        display: grid;
+        align-items: flex-start;
+    }
+    .make-your-home-green__content {
+        margin-left: 130px;
+    }
+}

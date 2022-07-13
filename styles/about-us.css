@@ -80,7 +80,7 @@
 
 @media (min-width: 1200px) {
     .about-us {
-        display: flex;
+       display: flex;
        justify-content: center;
     }
 }
