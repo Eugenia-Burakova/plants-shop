@@ -45,11 +45,11 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: 1s;
 }
 
 .make-your-home-green__button-plants:hover {
     background-color: var(--text-main-color);
-    transition: 1s;
 }
 
 .make-your-home-green__button-info {
@@ -66,12 +66,12 @@
     padding: 20px;
     text-decoration: none;
     text-align: center;
+    transition: 1s;
 }
 
 .make-your-home-green__button-info:hover {
     background-color: var(--text-main-color);
     color: white;
-    transition: 1s;
 }
 
 .make-your-home-green__buttons {
