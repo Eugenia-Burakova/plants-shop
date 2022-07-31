@@ -50,6 +50,11 @@
     width: 120px;
     padding: 15px 20px 15px 20px;
     border: none;
+    transition: 1s;
+}
+
+.what-we-offer__tabs-button:hover {
+    color: var(--text-main-color);
 }
 
 .what-we-offer__tabs {
@@ -65,6 +70,18 @@
     margin-left: 40px;
     margin-right: 40px;
 }
+
+/* #what-we-offer__tabs-indoor-check {
+    display: none;
+}
+
+#what-we-offer__tabs-indoor {
+    display: none;
+}
+
+#what-we-offer__tabs-indoor-check:checked ~ .what-we-offer__tabs-indoor {
+    display: flex;
+} */
 
 .what-we-offer__tabs-outdoor {
     display: grid;
