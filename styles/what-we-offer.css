@@ -2,9 +2,6 @@
     background-image: linear-gradient(var(--background-light-color), var(--background-lightest-color));
 }
 
-.what-we-offer__container {
-}
-
 .what-we-offer__info {
     padding: 30px;
     text-align: center;
@@ -51,6 +48,7 @@
     padding: 15px 20px 15px 20px;
     border: none;
     transition: 1s;
+    text-decoration:none;
 }
 
 .what-we-offer__tabs-button:hover {
@@ -70,18 +68,6 @@
     margin-left: 40px;
     margin-right: 40px;
 }
-
-/* #what-we-offer__tabs-indoor-check {
-    display: none;
-}
-
-#what-we-offer__tabs-indoor {
-    display: none;
-}
-
-#what-we-offer__tabs-indoor-check:checked ~ .what-we-offer__tabs-indoor {
-    display: flex;
-} */
 
 .what-we-offer__tabs-outdoor {
     display: grid;
@@ -112,6 +98,27 @@
     color: var(--light-description-color);
     font-size: 17px;
     line-height: 2rem;
+}
+
+.what-we-offer__all-tabs {
+    overflow: hidden;
+}
+
+.what-we-offer__all-tabs button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.what-we-offer__all-tabs button.active {
+    color: black;
+    /* text-decoration: underline;                       */
+}
+
+.what-we-offer__tab-content {
+    display: none;
+    padding: 6px 12px;
 }
 
 @media (min-width: 768px) {

@@ -15,14 +15,20 @@
     <header class="header">
 
         <div class="header__content">
+            
+            <div class="header__logo-container">
+                <a href="#" class="header__logo">
+                    <img class="header__logo-image" src="img/plantland-logo-header.svg" alt="PlantLand Logo">
+                </a>
+            </div>
 
-        <a href="#" class="header__logo">
-            <img class="header__logo-image" src="img/plantland-logo-header.svg" alt="PlantLand Logo">
-        </a>
-
-        <nav class="header__nav">
-
-        </nav>
+            <div class="header__burger-container">
+                <div class="navigation-burger"><span></span></div>
+            </div>
+               
+            <nav class="header__nav">
+            </nav>
+            
 
         </div>
 
@@ -131,14 +137,18 @@
             <p class="what-we-offer__text">We sell both indoor and outdoor varieties of plants.</p>
         </div>        
 
-        <div class="what-we-offer__buttons-container">
-            <label for="what-we-offer__tabs-indoor-check"><a class="what-we-offer__tabs-button" href="#what-we-offer__tabs-indoor">Indoor</a></label>
-            <input type="checkbox" id="what-we-offer__tabs-indoor-check">
+        <!-- <div class="what-we-offer__buttons-container">
+            <a class="what-we-offer__tabs-button" href="#what-we-offer__tabs-indoor">Indoor</a>
             <a class="what-we-offer__tabs-button" href="#what-we-offer__tabs-outdoor">Outdoor</a>
+        </div> -->
+
+        <div class="what-we-offer__buttons-container what-we-offer__all-tabs">
+            <button class="what-we-offer__tabs-button" onclick="openTab(event, 'Indoor')">Indoor</button>
+            <button class="what-we-offer__tabs-button" onclick="openTab(event, 'Outdoor')">Outdoor</button>
         </div>
 
         <div class="what-we-offer__tabs">
-            <div class="what-we-offer__tabs-indoor" id="what-we-offer__tabs-indoor">
+            <div class="what-we-offer__tabs-indoor what-we-offer__tab-content" id="what-we-offer__tabs-indoor">
                 
                 <article class="what-we-offer__tab">
                     <img class="what-we-offer__tab-image" src="img/what-we-offer/small-ornamental-plants.png" alt="small-ornamental-plants">
@@ -170,7 +180,7 @@
                 </article>
             </div>
 
-            <div class="what-we-offer__tabs-outdoor" id="what-we-offer__tabs-outdoor">
+            <div class="what-we-offer__tabs-outdoor what-we-offer__tab-content" id="what-we-offer__tabs-outdoor">
 
                 <article class="what-we-offer__tab">
                     <img class="what-we-offer__tab-image" src="img/what-we-offer/outdoor-flowers.png" alt="outdoor-flowers">
@@ -541,6 +551,10 @@
         </div>
 
     </footer>
+
+    <!-- SCRIPTS -->
+    <script src="javascript/what-we-offer.js"></script>
+    <!-- SCRIPTS -->
     
 </body>
 </html>
