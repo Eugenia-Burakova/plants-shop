@@ -8,6 +8,9 @@
     font-family: 'Source+Sans+Pro', sans-serif;
     scroll-behavior: smooth;
     color: var(--main-color);
+
+    /*we should put color variables here*/
+    
 }
 
 img {

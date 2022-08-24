@@ -122,3 +122,23 @@ header div div .navigation-burger.active span {
     }
 }
  */
+
+@media (max-width: 992px) {
+   .navigation-wrapper {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-light-color);
+    transition: top 0.5s ease-in;
+    padding: 15px 24px 50px 24px;
+    overflow: hidden;
+    margin: auto;
+   }
+   .navigation-wrapper.active {
+    top: 0;
+   }
+}
+
+ 
