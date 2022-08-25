@@ -122,8 +122,31 @@ header div div .navigation-burger.active span {
     }
 }
  */
+.header__contacts-container {
+    display: none;
+}
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
+    .header__contacts-container {
+        display: block;
+    }
+}
+
+.header__banner-container {
+    padding: 30px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;                                    /*вирівнювання по вертикалі в даному випадку (впоперек даного блочка)*/
+    justify-content: space-between;                         /*вирівнювання по блочку (елементи стають по краях, всередині простір)*/
+}
+
+.navigation-logo img {
+    width: 162px;
+}
+
+@media (max-width: 991px) {
    .navigation-wrapper {
     position: fixed;
     top: -100%;
@@ -141,4 +164,47 @@ header div div .navigation-burger.active span {
    }
 }
 
- 
+.navigation-burger {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+@media (max-width: 991px) {
+    .navigation-burger span,
+    .navigation-burger::before,
+    .navigation-burger::after {
+        position: absolute;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background-color: var(--text-main-color);
+        transition: all 0.5s ease-in-out;
+        z-index: 2;
+    }
+    .navigation-burger::before,
+    .navigation-burger::after {
+        content: " ";
+    }
+    .navigation-burger::before {
+        top: 0;
+    }
+    .navigation-burger::after {
+        bottom: 0;
+    }
+    .navigation-burger.active::before {                      /*pseudoclasses we put in the end!!!*/
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+    .navigation-burger.active span {                         /*поставили клас active після .navigation-burger, бо будемо заст. його з js до саме .navigation-burger, а не span*/
+        transform: scale(0);
+    }
+    .navigation-burger.active::after {                       /*pseudoclasses we put in the end!!!*/
+        bottom: 40%;
+        transform: rotate(45deg);
+    }
+}   
+
