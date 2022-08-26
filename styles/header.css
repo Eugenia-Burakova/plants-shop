@@ -62,7 +62,7 @@ header div div .navigation-burger span {
 
 .navigation-burger::before,
 .navigation-burger::after{
-    content: "";
+    content: " ";
 }
 
 .navigation-burger::before {
@@ -122,6 +122,7 @@ header div div .navigation-burger.active span {
     }
 }
  */
+
 .header__contacts-container {
     display: none;
 }
@@ -129,11 +130,19 @@ header div div .navigation-burger.active span {
 @media (min-width: 992px) {
     .header__contacts-container {
         display: block;
+        max-width: 1100px;
+        margin: auto;
     }
+}
+
+.header__banner {
+    background-image: linear-gradient(var(--background-light-color), transparent);
 }
 
 .header__banner-container {
     padding: 30px;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .navigation {
@@ -142,8 +151,26 @@ header div div .navigation-burger.active span {
     justify-content: space-between;                         /*вирівнювання по блочку (елементи стають по краях, всередині простір)*/
 }
 
+.navigation-logo {
+    position: relative;
+    z-index: 1;
+}
+
 .navigation-logo img {
     width: 162px;
+}
+
+.navigation-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width: 991px) {
@@ -153,7 +180,7 @@ header div div .navigation-burger.active span {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--background-light-color);
+    background-image: linear-gradient(var(--background-light-color), var(--background-lightest-color));
     transition: top 0.5s ease-in;
     padding: 15px 24px 50px 24px;
     overflow: hidden;
@@ -161,6 +188,21 @@ header div div .navigation-burger.active span {
    }
    .navigation-wrapper.active {
     top: 0;
+   }
+   .navigation-links {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    justify-items: center;
+   }
+   .navigation-socials {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    justify-items: center;
+    align-items: center;
+    height: 50px;
+   }
+   div.navigation-socials.navigation-social.fa-brands {
+    min-height: 50px;
    }
 }
 
