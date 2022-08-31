@@ -136,3 +136,64 @@
     }
 }   
 
+@media (min-width:992px) {
+    .header__contacts {
+        background-color: var(--text-main-color);
+    }
+    .header__contacts-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .contacts-item-phone__text, .contacts-item-email__text {
+        color: var(--text-title-color);
+        font-size: 15px;
+    }
+    .contacts-item-phone__number, .contacts-item-email__link {
+        color: var(--text-title-color);
+        font-size: 15px;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+    .contacts-item-phone__number:hover, .contacts-item-email__link:hover {
+        text-decoration: underline;
+    }
+    .navigation-wrapper, .navigation-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navigation {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navigation-burger {
+        position: absolute;
+    }
+    .navigation-links {
+        gap: 25px;
+    }
+    .navigation-wrapper {
+        gap: 50px;
+    }
+    .navigation-socials {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .navigation-link {
+        text-decoration: none;
+        color: var(--dark-description-color);
+        font-size: 17px;
+        line-height: 3ch;
+        transition: 0.2s;
+       }
+    
+       .navigation-link:hover {
+        color: var(--text-title-color);
+        font-size: 18px;
+        font-weight: 500;
+       }
+}
