@@ -189,11 +189,11 @@
         font-size: 17px;
         line-height: 3ch;
         transition: 0.2s;
-       }
+    }
     
        .navigation-link:hover {
         color: var(--text-title-color);
         font-size: 18px;
         font-weight: 500;
-       }
+    }
 }
