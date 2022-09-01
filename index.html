@@ -24,8 +24,11 @@
             </div>
 
             <div class="contacts-item-email">
-                <span class="contacts-item-email__text">Email:</span>
-                <a class="contacts-item-email__link" href="mailto:plantland@email.com">plantland@email.com</a>
+                <div class="contacts-item-email__container">
+                    <span class="contacts-item-email__text">Email:</span>
+                    <a class="contacts-item-email__link" href="mailto:plantland@email.com">plantland@email.com</a>
+                </div>
+                <div class="clock"></div>
             </div>
         </div>
 
@@ -50,6 +53,7 @@
                             <a class="navigation-link" href="#pricing">Pricing</a>
                             <a class="navigation-link" href="#kind-words">Testimonials</a>
                             <a class="navigation-link" href="#contacts">Contact us</a>
+                            
         
                         </div>
                         
@@ -58,7 +62,6 @@
                             <a class="navigation-link navigation__social" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                             <a class="navigation-link navigation__social" href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
                             <a class="navigation-link navigation__social" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></i></a>
-
                         </div>
                     </div>
 
@@ -113,72 +116,13 @@
     </section>
 
     <div class="products-slides">
-        <div class="products-slides__container">
-
-        <!-- <article class="products-slides__card">
-            <img class="products-slides__image" src="img/products-slides/plants-for-home.png" alt="plants-for-home">
-            <h3 class="products-slides__title">Plants for Home</h3>
-            <p class="products-slides__text">We offer a huge selection of flowers and evergreens that will be a joy to see for many years. 
-                A charming plant will be a great addition to the interior.</p>
-            <a href="#" class="products-slides__learn-more">Learn More</a>
-        </article>
-
-        <article class="products-slides__card">
-            <img class="products-slides__image" src="img/products-slides/plants-for-garden.png" alt="plants-for-garden">
-            <h3 class="products-slides__title">Plants for Garden</h3>
-            <p class="products-slides__text">Turn your yard into a colorful lawn! Here you will find dozens of varieties of flowers, 
-                both in the form of seeds, and already sprouted.</p>
-            <a href="#" class="products-slides__learn-more">Learn More</a>
-        </article>
-
-        <article class="products-slides__card">
-            <img class="products-slides__image" src="img/products-slides/sale-of-flowerpots.png" alt="sale-of-flowerpots">
-            <h3 class="products-slides__title">Sale of Flowerpots</h3>
-            <p class="products-slides__text">Purchase flowerpots for plants of any type, from small flowers to huge palm trees. 
-                Our store offers only quality flowerpots from trusted manufacturers.</p>
-            <a href="#" class="products-slides__learn-more">Learn More</a>
-        </article>
-
-        <article class="products-slides__card">
-            <img class="products-slides__image" src="img/products-slides/soil-for-plants.png" alt="soil-for-plants">
-            <h3 class="products-slides__title">Soil for Plants</h3>
-            <p class="products-slides__text">It's not easy to find quality soil in New York. We offer the best options for your plants. 
-                The soil we sell is decontaminated and enriched with nutrients.</p>
-            <a href="#" class="products-slides__learn-more">Learn More</a>
-        </article>
-
-        <article class="products-slides__card">
-            <img class="products-slides__image" src="img/products-slides/plant-food.png" alt="plant-food">
-            <h3 class="products-slides__title">Plant Food</h3>
-            <p class="products-slides__text">We offer everything you need to care for plants. 
-                Here you'll find a wide selection of fertilizers and medicinal products to combat flower diseases.</p>
-            <a href="#" class="products-slides__learn-more">Learn More</a>
-        </article>
-
-        <article class="products-slides__card">
-            <img class="products-slides__image" src="img/products-slides/consultations.png" alt="consultations">
-            <h3 class="products-slides__title">Consultations</h3>
-            <p class="products-slides__text">We not only sell plants and everything related to them 
-                but are also ready to answer any of your questions! Contact us to select the best plant!</p>
-            <a href="#" class="products-slides__learn-more">Learn More</a>
-        </article> -->
-
 
         <div class="products-slides__carousel">
-
-            <button class="products-slides__carousel-prev" type="button">
-                <img class="products-slides__carousel-prev-icon" src="img/about-elsapo/icon-prev.png" alt="icon previous">
-            </button>
-
+            <button class="products-slides__carousel-prev"><img class="products-slides__carousel-prev-icon" src="img/products-slides/angle-left-solid.svg"></button>
             <div class="products-slides__carousel-slide-container"></div>
-
-            <button class="products-slides__carousel-next" type="button">
-                <img class="products-slides__carousel-next-icon" src="img/about-elsapo/icon-next.png" alt="icon next">
-            </button>
-
+            <button class="products-slides__carousel-next"><img class="products-slides__carousel-next-icon" src="img/products-slides/angle-right-solid.svg"></button>
         </div>
 
-        </div>
     </div>
 
     <section class="what-we-offer" id="what-we-offer">
@@ -607,7 +551,8 @@
 
     <!-- SCRIPTS -->
     <script src="javascript/header-burger.js"></script>
-    <script src="javascript/products-slides.js"></script>
+    <script src="javascript/clock.js"></script>
+    <script src="javascript/products-slides-carousel.js"></script>
     <script src="javascript/what-we-offer.js"></script>
     <script src="https://kit.fontawesome.com/04c5bccfd1.js" crossorigin="anonymous"></script>
     <!-- SCRIPTS -->
