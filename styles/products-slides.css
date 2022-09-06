@@ -1,0 +1,23 @@
+.products-slides__carousel {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+@media (min-width: 640px) {
+    .products-slides__carousel-slide-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 960px) {
+    .products-slides__carousel-slide-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .products-slides__carousel-slide-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
