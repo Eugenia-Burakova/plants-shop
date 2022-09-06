@@ -1,6 +1,34 @@
+.products-slides {
+    background-color: var(--background-light-color);
+}
+
+.products-slides-container {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.products-slides__card {
+    height: 500px;
+    width: 250px;
+    background-color: var(--background-lightest-color);
+    border-radius: 20px;
+    border-top: 3px solid var(--text-title-color);
+}
+
+.products-slides__image {
+    width: 100px;
+}
+
+
+
+
+
+
+
 .products-slides__carousel {
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 30px 8fr 30px;
 }
 
 @media (min-width: 640px) {
