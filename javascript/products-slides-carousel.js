@@ -133,7 +133,7 @@
             <h3 class="products-slides__title">Plants for Home</h3>
             <p class="products-slides__text">We offer a huge selection of flowers and evergreens that will be a joy to see for many years. 
                 A charming plant will be a great addition to the interior.</p>
-            <a href="#" class="products-slides__learn-more">Learn More</a>
+            <a href="#contacts__form-section" class="products-slides__learn-more">Learn More</a>
         </article>`,
 
         `<article class="products-slides__card">
@@ -141,7 +141,7 @@
             <h3 class="products-slides__title">Plants for Garden</h3>
             <p class="products-slides__text">Turn your yard into a colorful lawn! Here you will find dozens of varieties of flowers, 
                 both in the form of seeds, and already sprouted.</p>
-            <a href="#" class="products-slides__learn-more">Learn More</a>
+            <a href="#contacts__form-section" class="products-slides__learn-more">Learn More</a>
         </article>`,
 
         `<article class="products-slides__card">
@@ -149,7 +149,7 @@
             <h3 class="products-slides__title">Sale of Flowerpots</h3>
             <p class="products-slides__text">Purchase flowerpots for plants of any type, from small flowers to huge palm trees. 
                 Our store offers only quality flowerpots from trusted manufacturers.</p>
-            <a href="#" class="products-slides__learn-more">Learn More</a>
+            <a href="#contacts__form-section" class="products-slides__learn-more">Learn More</a>
         </article>`,
 
         `<article class="products-slides__card">
@@ -157,7 +157,7 @@
             <h3 class="products-slides__title">Soil for Plants</h3>
             <p class="products-slides__text">It's not easy to find quality soil in New York. We offer the best options for your plants. 
                 The soil we sell is decontaminated and enriched with nutrients.</p>
-            <a href="#" class="products-slides__learn-more">Learn More</a>
+            <a href="#contacts__form-section" class="products-slides__learn-more">Learn More</a>
         </article>`,
 
         `<article class="products-slides__card">
@@ -165,7 +165,7 @@
             <h3 class="products-slides__title">Plant Food</h3>
             <p class="products-slides__text">We offer everything you need to care for plants. 
                 Here you'll find a wide selection of fertilizers and medicinal products to combat flower diseases.</p>
-            <a href="#" class="products-slides__learn-more">Learn More</a>
+            <a href="#contacts__form-section" class="products-slides__learn-more">Learn More</a>
         </article>`,
 
         `<article class="products-slides__card">
@@ -173,7 +173,7 @@
             <h3 class="products-slides__title">Consultations</h3>
             <p class="products-slides__text">We not only sell plants and everything related to them 
                 but are also ready to answer any of your questions! Contact us to select the best plant!</p>
-            <a href="#" class="products-slides__learn-more">Learn More</a>
+            <a href="#contacts__form-section" class="products-slides__learn-more">Learn More</a>
         </article>`
     ]
 
@@ -212,7 +212,7 @@
 
     document.querySelector('.products-slides__carousel-prev').addEventListener('click', showPrevSlide);
 
-    setInterval(showNextSlide, 3000);
+    // setInterval(showNextSlide, 3000);
 
     window.addEventListener('resize', showCurrentSlide);
 
