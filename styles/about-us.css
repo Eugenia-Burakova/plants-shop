@@ -59,6 +59,7 @@
 
 .about-us__button:hover {
     background-color: var(--text-main-color);
+    color: var(--text-title-color);
 }
 
 .about-us__image {

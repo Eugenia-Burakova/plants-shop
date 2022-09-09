@@ -212,7 +212,7 @@
 
     document.querySelector('.products-slides__carousel-prev').addEventListener('click', showPrevSlide);
 
-    // setInterval(showNextSlide, 3000);
+    setInterval(showNextSlide, 3000);
 
     window.addEventListener('resize', showCurrentSlide);
 

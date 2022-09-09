@@ -157,7 +157,10 @@
         transition: 0.2s;
     }
     .contacts-item-phone__number:hover, .contacts-item-email__link:hover {
-        text-decoration: underline;
+        text-decoration: none;
+        color: var(--text-title-color);
+        font-size: 16px;
+        font-weight: 500;
     }
     .navigation-wrapper, .navigation-links {
         display: flex;
