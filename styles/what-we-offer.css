@@ -31,13 +31,20 @@
     margin-top: 20px;
 }
 
+.what-we-offer__img-container {
+    height: 200px;
+    background-image: url(../img/what-we-offer/monstera-leaves.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
 .what-we-offer__buttons-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.what-we-offer__tabs-button {
+.what-we-offer__tabs-button, a.btn.btn-primary {
     font-family: 'Source+Sans+Pro', sans-serif;
     color: var(--text-title-color);
     background-color: transparent;
@@ -49,14 +56,13 @@
     border: none;
     transition: 1s;
     text-decoration:none;
+    box-shadow: none;
+    margin-top: 10px;
 }
 
-.what-we-offer__tabs-button:hover {
+.what-we-offer__tabs-button:hover, a.btn.btn-primary:hover {
     color: var(--text-main-color);
-}
-
-.what-we-offer__tabs {
-    margin-top: 30px;
+    border: none;
 }
 
 .what-we-offer__tabs-indoor {
@@ -110,14 +116,25 @@
     cursor: pointer;
 }
 
-.what-we-offer__all-tabs button.active {
-    color: black;
-    /* text-decoration: underline;                       */
-}
-
 .what-we-offer__tab-content {
     display: none;
     padding: 6px 12px;
+}
+
+.what-we-offer__tabs-block {
+    background: linear-gradient(var( --background-light-color), white);           
+}
+
+div.card.card-body {
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width: 767px) {
+    .what-we-offer__tab-content {
+        display: contents;
+    }
+    
 }
 
 @media (min-width: 768px) {
@@ -141,6 +158,12 @@
         grid-template-columns: auto;
         align-self: flex-start;
     }
+    .what-we-offer__img-container {
+        height: 250px;
+        background-image: url(../img/what-we-offer/monstera-leaves.jpg);
+        background-size: cover;
+        background-attachment: fixed; 
+    }
 }
 
 @media(min-width: 990px) {
@@ -160,6 +183,12 @@
     }
     .what-we-offer__tab-image {
         height: 500px;
+    }
+    .what-we-offer__img-container {
+        height: 300px;
+        background-image: url(../img/what-we-offer/monstera-leaves.jpg);
+        background-size: cover;
+        background-attachment: fixed; 
     }
 }
 
