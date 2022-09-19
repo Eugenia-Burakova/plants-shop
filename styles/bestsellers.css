@@ -1,0 +1,23 @@
+.bestsellers {
+    background-color: white;
+}
+
+.bestsellers__container {
+    max-width: 1800px;
+}
+
+.bestsellers__title {
+    color: var(--text-title-color);
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.bestsellers__slogan {
+    color: var(--text-main-color);
+    font-family: 'Gulzar', sans-serif;
+    font-size: 38px;
+    line-height: 2rem;
+    margin-top: 20px;
+    text-align: center;
+}
