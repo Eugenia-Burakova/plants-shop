@@ -3,7 +3,7 @@
 }
 
 .bestsellers__container {
-    max-width: 1800px;
+    margin: 20px 0 100px 0;
 }
 
 .bestsellers__title {
@@ -11,6 +11,7 @@
     font-size: 15px;
     letter-spacing: 4px;
     text-align: center;
+    padding: 30px;
 }
 
 .bestsellers__slogan {
@@ -20,4 +21,154 @@
     line-height: 2rem;
     margin-top: 20px;
     text-align: center;
+}
+
+.bestsellers__buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+.bestsellers__tabs-button, a.btn.btn-primary {
+    font-family: 'Source+Sans+Pro', sans-serif;
+    color: var(--text-title-color);
+    background-color: transparent;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 120px;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    transition: 1s;
+    text-decoration:none;
+    box-shadow: none;
+    margin-top: 10px;
+}
+
+.bestsellers__tabs-button:hover, a.btn.btn-primary:hover {
+    color: var(--text-main-color);
+    border: none;
+}
+
+.bestsellers__tabs-evergreens, .bestsellers__tabs-succulents {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.bestsellers__tab-image {
+    height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.bestsellers__tab-title {
+    color: var(--text-main-color);
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bestsellers__tab-text {
+    color: var(--light-description-color);
+    font-size: 15px;
+    line-height: 2rem;
+}
+
+.bestsellers__tab-button {
+    background-color: var(--text-title-color);
+    color: white;
+    font-family: 'Source+Sans+Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    padding: 20px;
+    max-width: 150px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 1s;
+    margin-bottom: 20px;
+}
+
+.bestsellers__tab-button:hover {
+    background-color: var(--text-main-color);
+    color: var(--text-title-color);
+}
+
+.bestsellers__all-tabs {
+    overflow: hidden;
+}
+
+.bestsellers__all-tabs button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/*                   !!!                   */
+.bestsellers__tab-content {
+    display: none;
+    padding: 6px 12px;
+}
+
+.bestsellers__tabs-block {
+    background-color: white;
+}
+
+div.card.card-body {
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width: 767px) {
+    .bestsellers__tab-content {
+        display: contents;
+    }
+}
+
+@media (min-width: 768px) {
+    .bestsellers__tabs-evergreens, .bestsellers__tabs-succulents {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 40px;
+    }
+    .bestsellers__tab-image {
+        height: 450px;
+    }
+    .bestsellers__tab {
+        display: grid;
+        grid-template-columns: auto;
+        align-self: flex-start;
+    }
+}
+
+@media(min-width: 990px) {
+    .bestsellers__tabs-evergreens, .bestsellers__tabs-succulents {
+        max-width: 1800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 40px;
+    }
+    .bestsellers__tab-image {
+        height: 500px;
+    }
+    .bestsellers__tab-title {
+        height: 50px;
+    }
+}
+
+@media(min-width: 1800px) {
+    .bestsellers__tabs-evergreens, .bestsellers__tabs-succulents {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
