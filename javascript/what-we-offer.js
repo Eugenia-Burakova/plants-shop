@@ -12,6 +12,7 @@ function openTab(evt, tabName) {
         what-we-offer__tabs-button[i].className = what-we-offer__tabs-button[i].className.replace(" active", "");
     }
 
+    
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
