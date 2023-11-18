@@ -1,4 +1,5 @@
 function openTab(evt, tabName) {
+    
     let i, what-we-offer__tab-content, what-we-offer__tabs-button;
     what-we-offer__tab-content = document.getElementsByClassName("what-we-offer__tab-content");
     for (i = 0; i < what-we-offer__tab-content.length; i++) {
