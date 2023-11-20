@@ -1,0 +1,15 @@
+.plants-amount {
+    background-color: var(--background-dark-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.plants-amount__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.plants-amount__item-heading, .plants-amount__item-text {
+    display: grid;
+    justify-content: center;
+}

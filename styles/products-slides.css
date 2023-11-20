@@ -9,11 +9,11 @@
     max-width: 1200px;
     margin: auto;
 }
+
 .products-slides__carousel {
     margin-left: 10px;
     margin-right: 10px;
     display: grid;
-    grid-template-columns: ;
     align-items: center;
 }
 
