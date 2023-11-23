@@ -1,0 +1,117 @@
+.pricing {
+    background-color: var(--background-light-color);
+    padding: 100px 0 100px 0;
+}
+
+.pricing__container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pricing__general-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pricing__title {
+    color: var(--text-title-color);
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 20px;
+}
+
+.pricing__slogan {
+    color: var(--text-main-color);
+    font-family: 'Gulzar', sans-serif;
+    font-size: 38px;
+    line-height: 2rem;
+    margin: 30px;
+    text-align: center;
+}
+
+.pricing__text {
+    color: var(--dark-description-color);
+    font-size: 17px;
+    margin: 20px;
+}
+
+.pricing__card {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.pricing__card::before {
+    content: "";
+    position: relative;
+    background-color: var(--text-title-color);
+    height: 4px;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+}
+
+.pricing__card-price {
+    color: var(--dark-description-color);
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Source+Sans+Pro', sans-serif;
+    margin-top: 20px;
+}
+
+.pricing__card-sort {
+    color: var(--text-main-color);
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Source+Sans+Pro', sans-serif;
+    letter-spacing: 0,5px;
+    margin: 0;
+}
+
+.pricing__card-plants {
+    color: var(--light-description-color);
+    margin: 30px;
+    line-height: 30px;
+}
+
+.pricing__card-button {
+    background-color: var(--text-title-color);
+    color: white;
+    font-family: 'Source+Sans+Pro', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px;
+    max-width: 150px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 1s;
+    margin:0 auto 20px auto;
+}
+
+.pricing__card-button:hover {
+    background-color: var(--text-main-color);
+    color: var(--text-title-color);
+}
+
+@media (min-width: 768px) {
+    .pricing__cards {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 990px) {
+    .pricing__cards {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}

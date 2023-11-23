@@ -58,7 +58,7 @@
     box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
 }
 
-.accordion-button:not(.collapsed)::after {                                           !!!!!!!!!!!!!!!!
+.accordion-button:not(.collapsed)::after {                                           
     color: var(--text-title-color);
 }
 
