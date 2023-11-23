@@ -10,6 +10,11 @@
     justify-content: center;
 }
 
+.what-we-offer__tabs {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .what-we-offer__title {
     color: var(--text-title-color);
     font-size: 15px;
