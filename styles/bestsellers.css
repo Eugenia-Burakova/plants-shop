@@ -4,6 +4,12 @@
 
 .bestsellers__container {
     margin: 20px 0 100px 0;
+    
+}
+
+.bestsellers__tabs-block {
+    max-width: 1200px;
+    margin: auto;
 }
 
 .bestsellers__title {
