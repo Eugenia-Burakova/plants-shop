@@ -1,5 +1,7 @@
 .plants-amount {
     background-image: url(../img/plants-amount-background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -7,6 +9,8 @@
 .plants-amount__container {
     display: flex;
     flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .plants-amount__item-heading, .plants-amount__item-text {
@@ -34,3 +38,18 @@
 .plants-amount__item {
     margin: 30px 0 30px 0;
 }
+
+@media (min-width: 768px) {
+    .plants-amount__container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 990px) {
+    .plants-amount__container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
