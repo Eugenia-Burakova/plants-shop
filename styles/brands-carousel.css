@@ -1,0 +1,14 @@
+.brands-carousel {
+    background-image: url(../img/brands-carousel/brands-carousel-background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px 0 100px 0;
+}
+
+.brands-carousel__container {
+    height: 400px;
+}
+
+.brands-carousel__img-box {
+    height: 150px;
+}
