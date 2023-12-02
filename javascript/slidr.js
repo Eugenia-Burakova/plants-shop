@@ -12,5 +12,3 @@
 //     touch: true,
 //     transition: 'cube'
 // }).start();
-
-  

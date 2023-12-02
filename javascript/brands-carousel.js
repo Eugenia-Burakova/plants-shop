@@ -1,16 +1,25 @@
-slidr.create('slidr-id', {
-    after: function(e) {console.log('in: ' + e.in.slidr);},
-    before: function(e) {console.log('out: ' + e.out.slidr);},
-    bredcrumbs: false,
-    controls: 'border',
-    direction: 'horizontal',
-    fade: false,
-    keyboard: true,
-    overflow: true,
-    theme: rgba(0, 0, 0, 0.96),
-    timing: {'cube': '0,5s ease-in'},
-    touch: true,
-    transition: 'cube'
-}).start();
+let slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("brands-carousel__img-box");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+}
   
