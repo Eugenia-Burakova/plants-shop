@@ -8,7 +8,7 @@
 .brands-carousel__container {
     height: 200px;
     max-width: 1200px;
-    
+    position: relative;
     margin: auto;
 }
 
