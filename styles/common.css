@@ -9,8 +9,16 @@
     scroll-behavior: smooth;
     color: var(--main-color);
 
-    /*we should put color variables here*/
-    
+    /*we can/should put color variables here*/
+
+    /* --text-main-color: rgba(13, 60, 0, 1);
+    --text-title-color: rgba(121, 162, 7, 1);
+    --dark-description-color: rgba(25, 28, 24, 1);
+    --light-description-color: rgba(112, 112, 112, 1);
+    --background-lightest-color: white;
+    --background-light-color: rgba(250, 245, 242, 1);
+    --background-dark-color: rgba(13, 60, 0, 1);
+    --plants-amount-big-text-color: rgba(236,210,160,1) */
 }
 
 img {
