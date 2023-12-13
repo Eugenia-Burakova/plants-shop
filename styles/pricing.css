@@ -67,6 +67,10 @@
     margin-top: 20px;
 }
 
+.pricing__card-price .highlight {
+    color: var(--text-title-color);
+}
+
 .pricing__card-sort {
     color: var(--text-main-color);
     font-size: 30px;
