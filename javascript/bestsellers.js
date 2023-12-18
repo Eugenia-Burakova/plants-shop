@@ -1,3 +1,4 @@
+(function() {
 function openTab(evt, tabName) {
      
     let i, bestsellers__tab-content, bestsellers__tabs-button;
@@ -14,3 +15,4 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+})();

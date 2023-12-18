@@ -4,5 +4,5 @@
         clockContainer.textContent = new Date().toLocaleTimeString();
     }
     setInterval(updateClock, 1000);
-})()
+})();
 

@@ -1,4 +1,4 @@
-function() {
+(function() {
     function handleInput(evt) {
         const value = evt.target.value;
         const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -16,4 +16,4 @@ function() {
         }
     }
     document.querySelector('#email-form').addEventListener('submit', handleInput);
-}
+})();
