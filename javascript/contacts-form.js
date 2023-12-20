@@ -10,6 +10,7 @@
             email: document.querySelector('.contact-form-nodejs input[name=user-email]').value,
             text: document.querySelector('.contact-form-nodejs input[name=user-text]').value
         }); //готує дані для відправки
+
         try {
             await fetch(event.target.action, { //відправляє дані на сервер
                 method: form.method, //тут post
@@ -19,12 +20,15 @@
                     'Accept': 'application/json'
                 }//треба задати, шо це json
             });
+
             status.innerHTML = "Thanks for your submission!";
             form.reset(); //скидання форми, щоб поля після сабміт були пусті
+        
         } catch { //якщо у try буде помилка, тоді воног перейде в цей блок і видасть текст
             //якщо в try помилки не буде, то воно блок catch пропустить і піде далі
             status.innerHTML = "Oops! There was a problem submitting your form";
         }
     }
+    
     form.addEventListener("submit", handleSubmit)
 })();
