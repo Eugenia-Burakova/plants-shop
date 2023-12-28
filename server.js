@@ -30,8 +30,8 @@ app.post('/contacts', (req, res) => { //app.post - endpoint (api на бекен
 
 console.log(
   'Server is running on',
-  process.env.PORT || 3000,
+  process.env.PORT || 5500,
   process.env.IP || '0.0.0.0'
 );
 
-app.listen(process.env.PORT || 3000, process.env.IP || '0.0.0.0');
+app.listen(process.env.PORT || 5500, process.env.IP || '0.0.0.0');
